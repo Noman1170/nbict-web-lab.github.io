@@ -8,11 +8,16 @@
 }
 
 .navbar{
-    background: crimson;
+    /* background: crimson; */
     position: fixed;
     width: 100%;
     font-family: Ubuntu, sans-serif;
-    padding: 15px 0;
+    padding: 30px 0;
+}
+.navbar.sticky{
+    background: crimson;
+    padding: 30px 0;
+    
 }
 
 .navbar .max-width{
@@ -45,6 +50,18 @@
     margin-left: 25px;
 }
 
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.navbar .menu li a{
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a span{
+    color: crimson;
+}
+
 .home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
@@ -52,23 +69,28 @@
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    font-family: ubuntu,sans-serif;
+    font-family: ubuntu, sans-serif;
 }
+
 .home .max-width{
     margin: auto 0 auto 40px;
 }
+
 .home .home-content .text-1{
     font-size: 27px;
 }
+
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
 }
+
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0px;
 }
+
 .home .home-content .text-3 span{
-color: crimson;
-font-weight:500;
+    color: crimson;
+    font-weight: 500;
 }
